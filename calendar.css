@@ -1,4 +1,9 @@
-body{
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
     background-color: #D6EADF;
     margin: 0;
     padding: 0;
@@ -55,6 +60,15 @@ body{
 .weekdays ul{
     list-style-type: none;
     margin-bottom: 0;
+    display: grid;
+    grid-template-columns: [monday] 1fr [tuesday] 1fr [wednesday] 1fr [thursday] 1fr [friday] 1fr [saturday] 1fr 
+    [sunday] 1fr;
+    margin-left: 40px; 
+    margin-right: 40px;
+    background-color: #15422b;
+    grid-template-rows: 40px;
+    
+    
 }
 
 .weekdays li{
@@ -71,11 +85,15 @@ body{
 }
 
 .days ul{
+    padding-top: 15px;
     list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
 }
 
 .days{
-    padding: 3px;
+    padding: 1px;
+    /* padding-bottom: 225px; */
     background-color: #86C1A1;
     margin-right: 40px;
     margin-left: 40px;
@@ -85,8 +103,32 @@ body{
 .days li{
     margin-top: 0;
     list-style-type: none;
-    display: inline-block;
-    width: 14%;
+    display: block;
+    width: 13.3%;
     text-align: center;
-    margin-bottom: 5px;
+    border-inline: solid;
+    margin-bottom: 50px;
+    min-height: 40px;
 }
+
+
+ .first{
+   grid-column: friday;
+}
+
+.first:hover{
+    background-color: #15422b;
+    background: #15422b;
+    cursor: pointer;
+}
+
+.hover:hover{
+    background-color: #15422b;
+    background: #15422b;
+    cursor: pointer;
+}
+/*
+.second{
+    margin-left: 10px;
+    margin-right: ; */
+/* } */
