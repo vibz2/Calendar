@@ -84,33 +84,6 @@ body {
     padding-bottom: 0;
 }
 
-.days ul{
-    padding-top: 15px;
-    list-style-type: none;
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-}
-
-.days{
-    padding: 1px;
-    /* padding-bottom: 225px; */
-    background-color: #86C1A1;
-    margin-right: 40px;
-    margin-left: 40px;
-    margin-top: 0;
-}
-
-.days li{
-    margin-top: 0;
-    list-style-type: none;
-    display: block;
-    width: 13.3%;
-    text-align: center;
-    border-inline: solid;
-    margin-bottom: 50px;
-}
-
-
  .first{
    grid-column: friday;
 }
